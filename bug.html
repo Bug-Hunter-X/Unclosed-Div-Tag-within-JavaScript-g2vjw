@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrectly closing the <div> tag inside the JavaScript code
+    document.getElementById("myDiv").innerHTML += '</div>';
+  </script>
+</body>
+</html>
